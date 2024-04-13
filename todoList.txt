@@ -1,0 +1,4 @@
+Make navigation bar
+Change titles for pages
+Add content
+Play with light and dark themes
