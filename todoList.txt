@@ -1,4 +1,6 @@
 Make navigation bar
+- remove link lines
+- play with fonts and placements
 Change titles for pages
 Add content
 Play with light and dark themes

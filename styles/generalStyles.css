@@ -14,7 +14,13 @@
 .generalAlign{
     text-align: center;
 }
-
+.navBar{
+    display: inline-block;
+    padding-top: 25px;
+}
+.navBarAlignRight{
+    float: right;
+}
 /** id calls **/
 #page-container {
     position: relative;
