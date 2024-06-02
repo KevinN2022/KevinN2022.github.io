@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: plex;
+    justify-content: center;
+    height: 100vh;
+    background-color:aliceblue;
+}
+/** Header **/
+.container-fluid .user-info{
+    position: absolute; 
+    left: auto; 
+    right: 0;
+}
+
+/** Chat Box  **/
+.chat-container{
+    width: 70%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.chat-Box{
+    max-height: 500px;
+    min-height: 100px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: hsla(0,0%,100%,.1);
+}
+
+.input-container{
+    display: flex;
+    padding: 10px;
+    max-width: 100%;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.input-container input{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.input-container button{
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    right:0;
+    aspect-ratio: 1;
+    margin-right: 15px;
+    margin-top: 7px;
+    position: absolute;
+}
+
+button:disabled{
+    background-color: dimgray;
+}
+
+.message-container{
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.chat-Box .user-name, .chat-Box .bot-name{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.greeting-container {
+    text-align: center;
+}
+
+.greeting-text {
+    font-size: 30px;
+    color: #333; 
+    margin: auto;
+    margin-top: 70px;
+}
+
+/** Contact Chip **/
+.chip-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+

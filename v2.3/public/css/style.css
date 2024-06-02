@@ -1,0 +1,210 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color:aliceblue;
+    min-height: 100vh;
+    transition: all 0.4s ease-in-out;
+}
+
+main{
+    flex-grow:1;
+}
+
+/** Header **/
+.container-fluid .user-info{
+    position: absolute; 
+    left: auto; 
+    right: 0;
+}
+
+/*Footer*/
+.icon-link i{
+    color: black;
+}
+
+/****Sidebar***/
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 101vh;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#question-list {
+    overflow: hidden;           /* Hide overflowing content within the question list */
+    text-overflow: ellipsis;    /* Display ellipsis (...) when content overflows */
+}
+
+#content {
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#content.active {
+    margin-left: 250px; 
+}
+
+
+
+/* Dark and Light Toggle */
+.navbar, footer{
+    background-color: #008080;
+    transition: .4s;
+}
+.p-2{
+    background-color: #99CFCF;
+    transition: .4s;
+}
+.dark-light{
+    height:36px;
+    width:80px;
+    background-color: white;
+    border-radius: 34px;
+    position: absolute;
+    display:inline-block;
+    right: 108px;
+    cursor: pointer;
+}
+.dark-light::before{
+    content: "";
+    height: 28px;
+    width: 28px;
+    border-radius: 34px;
+    background-color: #008080;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: all 0.4s ease-in-out;
+}
+.dark-light.active::before{
+    background-color: #003434;
+    left: calc(100% - 26px - 5px);
+}
+.dark-light.active::after{
+    background-color: #000000;
+}
+body.darkLightMode{
+    background-color: #001b1b;
+}
+footer.darkLightMode{
+    background-color: #000000;
+}
+.navbar.darkLightMode{
+    background-color: #000000;
+}
+.darkChangeP2.darkLightMode{
+    background-color: #003434;
+}
+.darkChangeWhites.darkLightMode{
+    background-color: #006767;
+}
+
+/* Clock Display */
+.clock-container{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+}
+.clock{
+    font-family: "Dosis", sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock span{
+    font-size: 100px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hours::after{
+    font-size: 30px;
+    content: 'Hours'
+}
+#minutes::after{
+    font-size: 30px;
+    content: 'Minutes'
+}
+#seconds::after{
+    font-size: 30px;
+    content: 'Seconds'
+}
+#time-period{
+    left: 10px;
+}
+
+/* Current Date Display */
+.current-date{
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    left: 30%;
+    position: inherit;
+}
+
+/* Hour Format */
+.toggle-container{
+    height: 30px;
+    width: 200px;
+    background-color: #008080;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.clock-format-text{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.format-switch-btn{
+    height: 25px;
+    width: 45px;
+    background-color: white;
+    border-radius: 34px;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    left: 140px;
+    bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.format-switch-btn:before{
+    content: '';
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background-color: #008080;
+    border-radius: 50%;
+    transform: translateX(-10px);
+    transition: all 0.4s ease-in-out;
+}
+.format-switch-btn.active:before{
+    transform: translateX(10px);
+}

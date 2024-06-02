@@ -4,3 +4,4 @@ Make navigation bar
 Change titles for pages
 Add content
 Play with light and dark themes
+Make projects have different webpage designs that fit the project theme
