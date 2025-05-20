@@ -1,0 +1,10 @@
+Plan general layout of pages in html and css
+Add general/basic information in each page
+Allow for contact page to work (allowing emails to an inbox)
+
+
+
+
+
+Find projects
+Create projects
